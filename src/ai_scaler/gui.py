@@ -22,6 +22,8 @@ ROOT_COLOR = "#e8543f"       # root note (distinct color)
 NOTE_TEXT = "#ffffff"
 LABEL_FG = "#e8e8e8"
 MUTED_FG = "#9aa3b8"
+CHORD_BG = "#ffffff"         # related chords section background
+CHORD_FG = "#000000"         # related chords section text
 
 INLAY_FRETS = {3, 5, 7, 9, 15, 17, 19, 21}
 DOUBLE_INLAY_FRETS = {12, 24}
@@ -117,11 +119,11 @@ class GuitarScaleApp(tk.Tk):
         tk.Label(panel, text="(click a chord to hear it)", bg=PANEL_BG,
                  fg=MUTED_FG, font=("Helvetica", 9)).pack(anchor="w", padx=12)
 
-        # Scrollable area for chord buttons.
-        chord_wrap = tk.Frame(panel, bg=PANEL_BG)
+        # Scrollable area for chord buttons (white card, black text).
+        chord_wrap = tk.Frame(panel, bg=CHORD_BG)
         chord_wrap.pack(fill=tk.BOTH, expand=True, padx=8, pady=6)
-        self.chord_frame = tk.Frame(chord_wrap, bg=PANEL_BG)
-        self.chord_frame.pack(fill=tk.BOTH, expand=True)
+        self.chord_frame = tk.Frame(chord_wrap, bg=CHORD_BG)
+        self.chord_frame.pack(fill=tk.BOTH, expand=True, padx=6, pady=6)
 
     def _build_statusbar(self) -> None:
         self.status = tk.Label(self, text="", bg=PANEL_BG, fg=MUTED_FG,
@@ -265,8 +267,9 @@ class GuitarScaleApp(tk.Tk):
             text = f"{chord.name:<8}  {' '.join(chord.notes)}"
             btn = tk.Button(
                 self.chord_frame, text=text, anchor="w",
-                bg="#323a52", fg=LABEL_FG, relief=tk.FLAT,
-                activebackground="#3d4766", activeforeground="white",
+                bg=CHORD_BG, fg=CHORD_FG, relief=tk.SOLID, bd=1,
+                highlightbackground="#cccccc",
+                activebackground="#e6e6e6", activeforeground="black",
                 font=("Courier", 11), padx=8, pady=3, cursor="hand2",
                 command=lambda m=midis: audio.play_chord(m),
             )
