@@ -1,0 +1,1 @@
+Start with the three menus. Root is the tonic — C, G, E, B flat, whatever you need. Scale is a long list: major, the three common minors, the church modes, pentatonics, blues, and a set of exotic scales. Tuning defaults to standard E A D G B E, and you can switch to drop D, half step down, open G, or dad-gad. Changing any menu redraws the board immediately.

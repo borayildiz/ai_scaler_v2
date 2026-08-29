@@ -1,0 +1,1 @@
+The right-hand panel spells the scale as text, with the root in brackets. For C major you see C, D, E, F, G, A, and B. That list is the same information as the dots, just linear. It is handy when you want to sing the scale, check a spelling, or confirm a sharp, without hunting across strings. When you switch scales, this list updates with the board.

@@ -1,0 +1,1 @@
+Think of it as a flashlight for the neck of the guitar. Choose a key and a scale, and every matching note lights up. The root is painted a different color so you never lose home base. Click a dot to hear that pitch, click a chord to hear a voicing, or press Play scale to hear the whole thing ascending. Visuals always work, even if sound cannot start on your machine.

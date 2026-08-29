@@ -1,0 +1,1 @@
+Under the notes, Related chords shows what you get when you harmonize the scale. For a seven-note scale, the app stacks thirds on each degree — the classic diatonic seventh chords. C major gives you C major seven, D minor seven, E minor seven, F major seven, G seven, A minor seven, and B minor seven flat five. Click any row to hear that chord voiced. Here is C major seven.
