@@ -1,0 +1,1 @@
+This is the main window. Across the top you pick the root note, the scale, and the tuning. On the left is a fifteen-fret guitar neck. On the right, a panel lists the scale tones and the related chords. Along the bottom, a status line tells you the app is ready — or warns you if audio could not start. Nothing is hidden in extra screens. One window is the whole tool.

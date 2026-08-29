@@ -1,0 +1,1 @@
+Now the fun part: sound. Click any lit note and a synthesized plucked tone plays that pitch. The synthesizer uses a few harmonics and a fast decay, so it feels more like a string than a beep. The Play scale button, highlighted here, walks the scale from the root up to the octave. Listen to C major.
