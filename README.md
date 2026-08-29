@@ -51,6 +51,9 @@ python main.py
   runs; the status bar shows the reason. Ensure an audio output device is
   available.
 
+A longer walkthrough with diagrams and code samples is in
+[`docs/guide.md`](docs/guide.md).
+
 ## Project layout
 
 ```
