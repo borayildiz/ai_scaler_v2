@@ -86,10 +86,25 @@ class GuitarScaleApp(tk.Tk):
         tuning_cb.pack(side=tk.LEFT, padx=(0, 12))
         tuning_cb.bind("<<ComboboxSelected>>", self._on_tuning_change)
 
-        play_btn = tk.Button(bar, text="Play scale", command=self.play_scale,
-                             bg=SCALE_COLOR, fg="white", relief=tk.FLAT,
-                             activebackground="#2f6bb8", font=("Helvetica", 11, "bold"),
-                             padx=12, pady=4, cursor="hand2")
+        style.configure(
+            "Play.TButton",
+            background=SCALE_COLOR,
+            foreground="black",
+            font=("Helvetica", 11),
+            padding=(12, 4),
+            bordercolor=SCALE_COLOR,
+            lightcolor=SCALE_COLOR,
+            darkcolor=SCALE_COLOR,
+            focuscolor=SCALE_COLOR,
+            relief="flat",
+        )
+        style.map(
+            "Play.TButton",
+            background=[("active", "#2f6bb8"), ("pressed", "#2f6bb8")],
+            foreground=[("active", "black"), ("pressed", "black")],
+        )
+        play_btn = ttk.Button(bar, text="Play scale", command=self.play_scale,
+                              style="Play.TButton")
         play_btn.pack(side=tk.LEFT, padx=8, pady=8)
 
     def _build_body(self) -> None:
